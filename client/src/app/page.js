@@ -13,10 +13,10 @@ export default function Home() {
     >
       <Stack component="main" gap={1}>
         <Image
-          src="/cnmh-logo-bl.svg"
+          src="/logo/cnmh-logo-bl.svg"
           alt="CNMH logo"
-          width={280}
-          height={38}
+          width={300}
+          height={153}
           priority
         />
         <h3>Lugares</h3>

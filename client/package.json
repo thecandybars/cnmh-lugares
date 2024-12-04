@@ -11,12 +11,15 @@
   "dependencies": {
     "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.5",
-    "@mui/icons-material": "^6.1.8",
-    "@mui/material": "^6.1.8",
+    "@mui/icons-material": "^6.1.9",
+    "@mui/material": "^6.1.9",
+    "@react-google-maps/api": "^2.20.3",
     "next": "14.2.18",
+    "prop-types": "^15.8.1",
     "react": "^18",
     "react-dom": "^18",
-    "react-zoom-pan-pinch": "^3.6.1"
+    "react-zoom-pan-pinch": "^3.6.1",
+    "scrolly-video": "^0.0.23"
   },
   "devDependencies": {
     "eslint": "^8",

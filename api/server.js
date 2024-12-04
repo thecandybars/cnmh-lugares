@@ -1,11 +1,15 @@
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
+const cors = require("cors");
 
-const server = express();
+const app = express();
+
+// CORS
+app.use(cors());
 
 // Video streaming endpoint
-server.get("/video", (req, res) => {
+app.get("/video", (req, res) => {
   const videoPath = path.resolve("videos/sample.mp4"); // Example video path
   const stat = fs.statSync(videoPath);
   const fileSize = stat.size;
@@ -35,4 +39,4 @@ server.get("/video", (req, res) => {
   }
 });
 
-module.exports = server;
+module.exports = app;
