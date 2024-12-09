@@ -1,10 +1,13 @@
 "use client";
 import { useEffect } from "react";
 import VideoScroll from "@/components/VideoScroll/VideoScroll";
+import { videoURL } from "../page";
 
 const RESET_SCROLL = true;
 
 export default function EscalerasMiradorAmoSiloe() {
+  const source = `http://localhost:3001${videoURL}/mirador_AmoSiloe.mp4`;
+  console.log("🚀 ~ EscalerasMiradorAmoSiloe ~ source:", source);
   useEffect(() => {
     RESET_SCROLL && window.scrollTo(0, 0);
   }, []);
@@ -31,7 +34,7 @@ export default function EscalerasMiradorAmoSiloe() {
 
   return (
     <VideoScroll
-      src="http://localhost:3001/video"
+      src={source}
       speed={800}
       navigationHotspots={navigation}
       map={{

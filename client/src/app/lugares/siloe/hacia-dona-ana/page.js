@@ -1,10 +1,13 @@
 "use client";
 import { useEffect } from "react";
 import VideoScroll from "@/components/VideoScroll/VideoScroll";
+import { videoURL } from "../page";
 
 const RESET_SCROLL = true;
 
 export default function HaciaDoñaAna() {
+  const source = `http://localhost:3001${videoURL}/tienda_dona_Ana.mp4`;
+
   useEffect(() => {
     RESET_SCROLL && window.scrollTo(0, 0);
   }, []);
@@ -31,7 +34,7 @@ export default function HaciaDoñaAna() {
 
   return (
     <VideoScroll
-      src="http://localhost:3001/video"
+      src={source}
       speed={800}
       navigationHotspots={navigation}
       map={{

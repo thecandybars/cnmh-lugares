@@ -25,3 +25,5 @@ export default function Index_Siloe() {
     </Box>
   );
 }
+
+export const videoURL = "/video/lugares/siloe/scroll";

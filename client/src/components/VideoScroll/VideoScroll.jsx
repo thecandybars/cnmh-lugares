@@ -170,6 +170,7 @@ function VideoScroll({
           onChange={(e) => setScrollyPosition(e)}
           onReady={() => setLoading(false)}
           cover={true}
+          // useWebCodecs={false}
         />
       )}
 
